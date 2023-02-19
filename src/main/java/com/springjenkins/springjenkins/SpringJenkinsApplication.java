@@ -5,14 +5,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import jakarta.annotation.PostConstruct;
 
 @SpringBootApplication
 public class SpringJenkinsApplication {
 
 	public static Logger logger=LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	
-	@PostConstruct
+	@javax.annotation.PostConstruct
 	public void intt()
 	{
 		logger.info("application Started");
